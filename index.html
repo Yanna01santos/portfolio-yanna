@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanna Aparecida | Portfólio</title>
+
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="particulas"></div>
+
+  <header class="navegacao">
+    <ul class="menu">
+      <li><a href="#inicio" class="menu-link">Início</a></li>
+      <li><a href="#sobre" class="menu-link">Sobre</a></li>
+      <li><a href="#redes" class="menu-link">Redes Sociais</a></li>
+      <li><a href="#contato" class="menu-link">Contato</a></li>
+    </ul>
+  </header>
+
+  <main id="inicio" class="cabecalho animate-fade">
+    <img src="img/yanna.jpg" alt="Foto de Perfil" class="foto-perfil">
+    <h1>Yanna Aparecida</h1>
+    <p class="cabecalho-sub-titulo">Software Developer | Quality Engineer</p>
+  </main>
+
+  <section id="sobre" class="sobre animate-fade">
+    <h2 class="sobre-titulo">Sobre Mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Sou uma desenvolvedora de software apaixonada por tecnologia e inovação. Tenho experiência em
+        desenvolvimento web e estou sempre buscando aprender novas habilidades.
+      </p>
+    </div>
+  </section>
+
+  <section id="redes" class="redes animate-fade">
+    <h2 class="redes-titulo">Minhas Redes Sociais</h2>
+    <div class="redes-caixa">
+      <a href="https://github.com/Yanna01santos" target="_blank" class="redes-card">
+        <img src="img/github.png" alt="GitHub" class="redes-imagem">
+        <h3 class="info-redes">GitHub</h3>
+      </a>
+
+      <a href="https://www.linkedin.com/in/yanna-santos/" target="_blank" class="redes-card">
+        <img src="img/linkedin.jpg" alt="LinkedIn" class="redes-imagem">
+        <h3 class="info-redes">LinkedIn</h3>
+      </a>
+
+      <a href="https://gitlab.com/estagio-compass2/Sprints" target="_blank" class="redes-card">
+        <img src="img/gitlab.png" alt="GitLab" class="redes-imagem">
+        <h3 class="info-redes">GitLab</h3>
+      </a>
+    </div>
+  </section>
+
+  <section id="contato" class="contatos animate-fade">
+    <h2 class="contatos-titulo">Entre em Contato</h2>
+    <form class="formulario-contato" id="formulario">
+      <div class="grupo-form">
+        <input id="nome" placeholder="Nome" class="campo-form" required>
+      </div>
+      <div class="grupo-form">
+        <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem" required></textarea>
+      </div>
+      <button type="submit" class="botao-form">Enviar E-mail</button>
+    </form>
+
+    <div id="mensagem-enviada" style="display: none; margin-top: 20px; padding: 12px; border-radius: 5px; background-color: #d4edda; color: #155724; text-align: center;">
+      ✅ Mensagem enviada com sucesso!
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
